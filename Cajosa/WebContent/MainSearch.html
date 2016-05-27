@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>가좋사</title>
+		    <link rel="stylesheet" type="text/css" href="Style.css" />
+		    <link rel="stylesheet" type="text/css" href="MenuStyle.css"/>
+   		<style>
+   			body{
+   				margin-left:10px;
+   			}
+   			aside{background-color:pink;}
+        	ul li#now{
+        		color:#690707;
+        		font-size:1.5em;
+        	}
+        	content{
+        		clear:both;
+            	position:relative;
+            	left:200px;
+            	/*margin:0px;*/
+            	margin-right:500px;
+            	margin-top:0;
+        	}
+        	content fieldset{
+        		border:0.3px solid gray;
+        		-webkit-padding:10 12 10 12;
+        		-webkit-width:700;
+        	}
+    	</style>
+	</head>
+	<body>
+		<!--로고 이미지 사진을 누르면 홈으로-->
+   		<header>
+        	<a href="mainSearch.html">
+            	<img src="../pictures/mainLogo.jpg" width="320" height="150" alt="가좋사" 
+            	style="margin-left:50%; margin-right:50%"/>
+        	</a>
+    	</header>
+    	<!-- 개인 메뉴 -->
+    	<aside id="left">
+    		<div>
+    			개인프로필 사진
+    		</div>
+    	</aside>
+        <nav class="nav center">
+		<ul>
+			<li class="current"><a href="MainSearch,html">검색</a></li>
+			<li><a href="MainGreen.html">나의 그린라이트 현황</a></li>
+		</ul>
+	    </nav>
+       	<!-- 검색으로 가기 -->
+       	<content>
+       		<fieldset>
+       			<legend>조건 검색('*': 중복선택 가능)</legend>
+       			<form name="search" method="post" action="">
+       			<b>이름:</b> <input type="text" id="name">
+       			<b>학번: </b>
+       			<select id="studentnum" class="arg" size="1">
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16" selected>16</option>
+                </select>
+               	<b>학부:</b>
+               	<select id="major" class="arg" size="1">
+                    <option value="신학과">신학과</option>
+                    <option value="인문학부">인문학부</option>
+                    <option value="종교학과">종교학과</option>
+                    <option value="음악과">음악과</option>
+                    <option value="사회과학부">사회과학부</option>
+                    <option value="경영학부">경영학부</option>
+                    <option value="법정경학부">볍정경학부</option>
+                    <option value="특수교육과">특수교육과</option>
+                    <option value="영미언어문화학부">영미언어문화학부</option>
+                    <option value="동아시아언어문화학부">동아시아언어문화학부</option>
+                    <option value="프랑스어문화학과">프랑스어문화학과</option>
+                    <option value="국제학부">국제학부</option>
+                    <option value="자연과학부">자연과학부</option>
+                    <option value="생활과학부">생활과학부</option>
+                    <option value="생명환경학부">생명환경학부</option>
+                    <option value="컴퓨터정보공학부">컴퓨터정보공학부</option>
+                    <option value="정보통신전자공학부">정보통신전자공학부</option>
+                    <option value="미디어기술콘텐츠학과">미디어기술콘텐츠학과</option>
+                    <option value="간호대학">간호대학</option>
+                    <option value="교직과">교직과</option>
+                    <option value="약학대학">약학대학</option>
+                </select><br>
+               <b>*나이:</b> 
+               20<input type="checkbox" id="age" value="20">
+               21<input type="checkbox" id="age" value="21">
+               22<input type="checkbox" id="age" value="22">
+               23<input type="checkbox" id="age" value="23">
+               24<input type="checkbox" id="age" value="24">
+               25<input type="checkbox" id="age" value="25">
+               26<input type="checkbox" id="age" value="26">
+               27<input type="checkbox" id="age" value="27">
+               28<input type="checkbox" id="age" value="28">
+               29<input type="checkbox" id="age" value="29">
+               30<input type="checkbox" id="age" value="30">
+               <br>
+               <b>상대방의 흡연 여부:</b>
+               <label for="yes">흡연자</label><input type="radio" id="yes" name="smoking" value="yes" />
+                <label for="no">비흡연자</label><input type="radio" id="no" name="smoking" value="no" /> 
+                <label for="anything">무관</label><input type="radio" id="anything" name="smoking" value="anything" />
+               <br>
+               <b>*상대방의 종교: </b> 
+               	가톨릭교<input type="checkbox" id="religion" value="catholic">
+               	기독교<input type="checkbox" id="religion" value="christ">
+               	불교<input type="checkbox" id="religion" value="bud">
+               	기타<input type="checkbox" id="religion" value="etc">
+               	무관<input type="checkbox" id="religion" value="anything">
+               	<br>
+               <b>*키 :</b><br>
+               150cm 이하<input type="checkbox" id="height" value="150">
+               151cm~155cm<input type="checkbox" id="height" value="155">
+               156cm~160cm<input type="checkbox" id="height" value="22">
+               161cm~165cm<input type="checkbox" id="height" value="23">
+               166cm~170cm<input type="checkbox" id="height" value="24"><Br>
+               171cm~175cm<input type="checkbox" id="height" value="25">
+               176cm~180cm<input type="checkbox" id="height" value="26">
+               181cm~185cm<input type="checkbox" id="height" value="27">
+               186cm~190cm<input type="checkbox" id="height" value="28">
+               191cm 이상<input type="checkbox" id="height" value="29">
+               <br>
+               <b>병역 여부:</b>
+               	<label for="yes">군필</label><input type="radio" id="yes" name="army" value="yes" />
+                <label for="no">미필</label><input type="radio" id="no" name="army" value="no" /> 
+                <label for="anything">무관</label><input type="radio" id="anything" name="army" value="anything" />
+                <br>
+                
+               <input type="submit" value="검색"><input type="reset" value="초기화">
+               	</form>
+       		</fieldset>
+       	</content>
+   		<!-- footer -->
+    	<footer>
+    		<hr /><a href="CustomerService.html" target="_blank">고객센터</a>&nbsp;&nbsp;&nbsp; 
+    		<a href="Introduce.html" target="_self">홈페이지 소개</a>&nbsp;&nbsp;&nbsp; <b>Copyright ⓒ CinemaIn.</b>
+    	</footer>
+	</body>
+</html>

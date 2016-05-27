@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="EUC-KR">
+    <title>가좋사 - 메세지함</title>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <style>
+        h3 {
+            text-align: left;
+            color: rgb(105,127,127);
+        }
+
+        nav {
+            width: 20%;
+            height: 90%;
+            float: left;
+            font-size: 13pt;
+            border-right-style: dotted;
+        }
+
+        section {
+            width: 80%;
+            height: 90%;
+            font-size: 12pt;
+        }
+
+        ul {
+            list-style: none;
+            text-align: left;
+            font-size: 12pt;
+        }
+
+            ul li {
+                display: inline;
+                text-transform: uppercase;
+                padding 0 50px;
+                letter-spacing: 10px;
+            }
+
+                ul li a {
+                    text-decoration: none;
+                    color: rgb(105,127,127);
+                }
+
+        body {
+            font-family: "휴먼편지체";
+            font-size: large;
+            background-color: rgb(253,251,239);
+            background-image: url("./../pictures/logo.jpg");
+            background-repeat: no-repeat;
+            background-position: 250px 120px;
+        }
+        /*
+        footer {
+            font-size: 0.7em;
+            text-align: center;
+        }
+            */
+        /*쪽지함 정렬view*/
+        fieldset#chart {
+            border: none;
+        }
+
+        table {
+            clear: both;
+        }
+
+            table th {
+                background-color: #f0e6e6;
+            }
+
+        #rank {
+            color: red;
+            font-size: 17px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <a href="MainSearch.html">
+                <img id="logo" src="./../pictures/logoname.png" width="100" height="50" alt="가좋사" />
+            </a>
+        </header><hr />
+        <content>
+            <aside id="left">
+                <h3>쪽지함</h3>
+                <ul>
+                    <li><a href="boxoffice.html" target="_self">받은 쪽지함</a></li>
+                    <br />
+                    <br />
+                    <li><a href="romance.html" target="_self">보낸 쪽지함</a></li>
+                </ul>
+            </aside>
+            <!--받은 쪽지함-->
+            <section id="boxoffice">
+                <article>
+                    <fieldset id="chart">
+                        <legend style=" font-weight:bold; font-size:1.6em; float:left;"><span style="color:#7f2323;">|</span> 받은 쪽지함</legend>
+                        <br /><br /><br /><table border="0" cellspacing="8">
+                            <!--1행-->
+                            <tr>
+                                <th></th>
+                                <th> 보 낸&nbsp; 사 람 </th>
+                                <th> 제 목 </th>
+                                <th> 받 은&nbsp; 날 짜 </th>
+                                <th> 읽 음 </th>
+                            </tr>
+                            <!--1위 영화-->
+                            <tr>
+                                <td><span id="rank">1</span></td>
+                                <td>이강렬</td>
+                                <td>안녕하세요~ 이강렬입니다! 친해지고싶어요~ 연락할까요?</td>
+                                <td>2016.05.13</td>
+                                <td>읽지않음</td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </article>
+            </section>
+        </content>
+    </div>
+    <footer>
+        <hr />
+        <a href="CustomerService.html" target="_blank">고객센터</a> <a href="Introduce.html" target="_self">홈페이지 소개</a> <b>Copyright ⓒ 가좋사</b>
+    </footer>
+</body>
+</html>

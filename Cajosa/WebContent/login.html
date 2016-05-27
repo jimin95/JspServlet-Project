@@ -1,0 +1,64 @@
+﻿
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>가좋사 :Login</title>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <style>
+        body {
+            background-color: rgb(253,251,239);
+        }
+        form {
+            text-align: center;
+        }
+        input {
+            width: 500px;
+            height: 50px;
+            margin-top: 20px;
+            font-size: x-large;
+        }
+        fieldset {
+            border: 1px solid white;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            margin-top: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: #3a3939;
+        }
+        a:hover {
+                text-decoration: underline;
+                color: #822b2b;
+        }
+        footer{
+            position:relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div align="center">
+            <header id="header">
+                <img id="logo" src="./../pictures/logo.jpg" alt="가좋사" class="img-rounded" />
+            </header>
+            <content>
+                <form name="login" method="post" action="member.LoginServlet">
+                    <fieldset>
+                        <input type="text" placeholder="아이디" required /><br />
+                        <input type="password" placeholder="비밀번호" required /><br />
+                        <input type="image" src="./../pictures/loginbt.png" style="height:80px; width:350px;" />
+                        <hr style="width:500px" />
+                        <a href="#" target="_self">아이디 찾기</a>&nbsp;|&nbsp;<a href="#" target="_self">비밀번호 찾기</a>&nbsp;|&nbsp;<a href="JoinInfo.html" target="_self">회원가입</a>
+                    </fieldset>
+                </form>
+            </content>
+        </div>
+    </div> 
+    <footer>
+        <hr />
+        <a href="Introduce.html" target="_self">홈페이지 소개</a>&nbsp;&nbsp;&nbsp; <b>Copyright ⓒ CinemaIn.</b>
+    </footer>
+</body>
+</html>

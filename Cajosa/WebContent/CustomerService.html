@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>가좋사:Customer Service Center</title>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <style>
+    	body{background-color: rgb(253,251,239);}
+        h2 {text-shadow:10px 10px 10px grey; text-align:center;}
+        fieldset {margin-left:auto; margin-right:auto; width:50%;}
+        div{
+            margin-left:auto; margin-right:auto; width:50%; margin-bottom:10px;
+            border:1px solid white;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <!--이미지 사진을 누르면 홈으로-->
+        <header>
+            <a id="login" href="login.html" target="_self"><div id="login"><b>로그인</b></div></a><br /><br />
+            <a href="main.html">
+                <img src="../pictures/logoname.png" width="300" height="100" alt="가좋사" />
+            </a>
+        </header>
+        <content>
+            <form name="customer" method="post" action="customer.jsp">
+                <h2>&lt;고객센터&gt;</h2>
+                <div sytle="center">
+                    언제나 저희 가좋사을 이용해주시는 여러분들께 감사의 인사말을 남기며, <br />보내주시는 의견에 좀 더 분발하며 발전해 나가는 모습을 보이겠습니다.
+                    감사합니다 :)
+                </div>
+                <fieldset>
+                    <select name="field">
+                        <option value="suggestion">건의사항</option>
+                        <option value="QnA">질문사항</option>
+                        <option value="complain">불편사항</option>
+                    </select>
+                    <input type="text" name="제목" placeholder="제목" style="width:630px; margin-bottom:10px;" />
+                    <textarea cols="100" rows="30" placeholder="내용을 입력해주세요."></textarea>
+                    <input type="submit" value="제출" />
+                    <input type="reset" value="초기화" />
+                </fieldset>
+            </form>
+        </content>
+    </div>
+    <footer>
+    <hr /><a href="CustomerService.html" target="_blank">고객센터</a>&nbsp;&nbsp;&nbsp; <a href="Introduce.html" target="_self">홈페이지 소개</a>&nbsp;&nbsp;&nbsp; <b>Copyright ⓒ CinemaIn.</b>
+    </footer>
+</body>
+</html>

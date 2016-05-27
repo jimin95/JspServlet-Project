@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>가좋사 - 회원가입</title>
+		<link rel="stylesheet" type="text/css" href="Style.css" />
+		<style>
+      	  body {
+      	      font-size:large;
+     	       background-color: rgb(253,251,239);
+     		   }
+      	  #logo {
+      	      float:left;
+      	 	 }
+        	h2 {color:#434141; text-align:center;}
+      		input.arg {width:200px;height:30px;}
+        	fieldset {
+            border: 1px solid rgb(253,251,239);
+            margin-left:auto; margin-right:auto; width:10%;
+            margin-top:10px;
+       		 }
+      	  footer{position:relative;}
+    	</style>
+    	<!-- id 체크  -->
+    	<script>
+    		function ckeckId(){
+    			var sid = document.join.id.value;
+    			if(sid.length<4)
+    				alert("아이디는 4글자 이상이어야 합니다.");
+    			else
+    				window.open("checkId.jsp?id="+sid, "", "width=400 height=150");
+    		}
+   		</script>
+	</head>
+	<body>
+		 <!--이미지 사진을 누르면 홈으로-->
+   	 <header>
+        <a id="join" href="login.html" target="_self"><div id="login"><b>로그인</b></div></a>
+        <a href="login.html">
+            <img id="logo" src="../pictures/logoname.png" width="100" height="50" alt="가좋사" />
+        </a><br /><br />
+    </header><hr />
+    <section1 style="float:left">
+        <img src="../pictures/logo.jpg" style="margin-top:200px; margin-left:10px" /><br /><br />
+        <br /><br /><br />
+    </section1>
+        <form name="join" method="post" action="JoinQ.jsp">
+            <h2>가좋사 회원가입</h2>
+            <fieldset>
+                <legend><strong>아이디</strong></legend>
+                <input type="text" class="arg" id="id" placeholder ="아이디:영문,숫자 사용 4자이상" width="300" height="30" 
+                style="ime-mode:disabled" required/>
+                <input type="button" value="ID 중복확인" onclick="ckeckId();" required>
+            </fieldset>
+            <fieldset>
+                <legend><strong>비밀번호</strong></legend>
+                <input class="arg" id="password" type="password" placeholder="비밀번호" required />
+            </fieldset>
+            <fieldset>
+                <legend><strong>이름</strong></legend>
+                <input class="arg" id="name" type="text" placeholder="이름" required />
+            </fieldset>
+            <fieldset>
+                <legend><strong>학번</strong></legend>
+                <select id="studentnum" class="arg" size="1">
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16" selected>16</option>
+                </select>
+               	 학번
+            </fieldset>
+            <fieldset>
+                <legend><strong>학부</strong></legend>
+                <select id="major" class="arg" size="1">
+                    <option value="신학과">신학과</option>
+                    <option value="인문학부">인문학부</option>
+                    <option value="종교학과">종교학과</option>
+                    <option value="음악과">음악과</option>
+                    <option value="사회과학부">사회과학부</option>
+                    <option value="경영학부">경영학부</option>
+                    <option value="법정경학부">볍정경학부</option>
+                    <option value="특수교육과">특수교육과</option>
+                    <option value="영미언어문화학부">영미언어문화학부</option>
+                    <option value="동아시아언어문화학부">동아시아언어문화학부</option>
+                    <option value="프랑스어문화학과">프랑스어문화학과</option>
+                    <option value="국제학부">국제학부</option>
+                    <option value="자연과학부">자연과학부</option>
+                    <option value="생활과학부">생활과학부</option>
+                    <option value="생명환경학부">생명환경학부</option>
+                    <option value="컴퓨터정보공학부">컴퓨터정보공학부</option>
+                    <option value="정보통신전자공학부">정보통신전자공학부</option>
+                    <option value="미디어기술콘텐츠학과">미디어기술콘텐츠학과</option>
+                    <option value="간호대학">간호대학</option>
+                    <option value="교직과">교직과</option>
+                    <option value="약학대학">약학대학</option>
+                </select>
+            </fieldset> 
+            <fieldset style="width:13%">
+                <legend><strong>성별</strong></legend>
+                <label for="male">남성</label>
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="female">여성</label>
+                <input type="radio" id="female" name="gender" value="female" />
+            </fieldset>
+            <fieldset>
+                <legend><strong>생년월일</strong></legend>
+                <input class="arg" id="birth" type="date" required/>
+            </fieldset>
+            <fieldset>
+                <legend><strong>휴대전화 번호</strong></legend>
+                <input class="arg" id="phone" type="text" placeholder="휴대전화 번호('-'포함)" required pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}"
+                       title="ex)010-1234-5678" />
+            </fieldset>
+            <fieldset>
+           		 <input type="image" src="../pictures/nextbt.png" width="120"height="30"/>
+           		 <a href=javascript:document.join.reset()><img src=../pictures/resetbt.png width="120" height="30"></a>
+        	</fieldset>
+        </form><hr />
+    <footer><a href="CustomerService.html" target="_blank">고객센터</a> <a href="Introduce.html" target="_self">홈페이지 소개</a> <b>Copyright ⓒ 가좋사.</b></footer>
+	</body>
+</html>
